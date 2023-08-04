@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+    font-size: 16px;
+}
+body{
+    background-color: rgba(30,29,43,255);
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    height: 6.3rem;
+    background-color: rgba(30,29,43,255); /*Contenedor Padre Encabezado*/
+    padding: 0 3.13rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    text-transform: uppercase;
+    color: rgba(255,112,42,255);
+    font-weight: 200;
+  }
+  .logo:hover{
+    cursor: pointer;
+    color: #F39C12;
+  }
+  .menu a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 0.63rem;
+    transition: 0.4s;
+  }
+  .mostrar-menu,
+  .esconder-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+  }
+  .mostrar-menu {
+    order: 1;
+  }
+  .menu a:hover,
+  .mostrar-menu:hover,
+  .esconder-menu:hover {
+    color: #B3B6B7;
+}
+  #check {
+    display: none;
+  }
+.home_title{
+    font-size: 5rem;
+    color: rgba(255,112,42,255);
+}
+.home_text{
+    font-size: 2.5rem;
+    color: #fff;
+}
+.btn{
+    width: 13rem;
+    height: auto;
+    font-size: 1.3rem;
+    background-color: rgba(255,112,42,255);
+    color: #fff;
+    border: none;
+}
+.btn:hover{
+    background-color: #F39C12;
+}
+.container-main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    margin-top: 2.5rem;
+}
+.home-information{
+    text-align: center;
+    align-self: center;    
+}
+.home-image{
+    width: 32rem;
+    height: auto;
+}
+.home-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-image{
+    display: flex;
+    width: 32rem;
+    height: auto;
+    margin-top: 4rem;
+}
+.about-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-information{
+    text-align: center;
+    align-self: center;
+    margin-top: 10rem;
+}
+.about_title,.menu_title,.services_title{
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgba(255,112,42,255);
+}
+
+.about_subtitle,.menu_text,.services_subtitle{
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+}
+.about_text{
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.food-menu,.services-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+.option-menu,.services-option{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);   
+    place-items: center;
+}
+.option-menu{
+    margin-top: 3rem;
+}
+.option1,.option2,.option3,.services1,.services2,.services3{
+    width: 20rem;
+    height: auto;
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;       
+}
+.option1:hover,.option2:hover,.option3:hover{
+    cursor: pointer;
+    background-color: #979A9A;
+}
+.food1,.food2,.food3,.order,.shipping,.dellverd{
+    width: 12rem;
+    height: auto;
+}
+.food1 img,.food2 img,.food3 img,.order img,.shipping img,.dellverd img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.option_title{
+    font-size: 1.5rem ;
+    color: #000;
+    text-align: center;
+    line-height: 2rem;
+}
+.option_subtitle{
+    font-size: 1.4rem;
+    color: #000;
+    text-align: center;
+    line-height: 1.5rem;
+}
+.option_price{
+    font-size: 1.3rem;
+    color: rgba(255,112,42,255);
+    text-align: center;
+    line-height: 1.5rem;
+}
+.option_title{
+    color: rgba(255,112,42,255);
+    font-size: 2rem;
+}
+.option_text{
+    color: #fff;
+    font-size: 1.2rem;
+}
+.services{
+    margin-top: 2.5rem;
+    background-color: rgba(30,29,43,255);
+}
+.order_title,.shipping_title,.dellverd_title{
+    font-size: 2rem;
+    color: rgba(255,112,42,255);
+    text-align: center;
+}
+.order_text,.shipping_text,.dellverd_text{
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+.container-phrase{
+    display: grid;
+    place-items: center;
+    margin-top: 6rem;
+}
+.item-phrase{
+    width: 70%;
+    height: 20rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.5rem solid #000;
+}
+.phrase_text{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+.btn3{
+    margin-top: 0;
+}
+.container-footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center;
+    margin-top: 5rem;
+    border-top: 0.2rem solid #e03131;
+    margin-bottom: 2rem;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.items_title{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.items a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+.items a:hover {
+    color: #5DADE2;
+}
+.container_btn{
+    display: flex;
+    flex-direction: row;
+    
+}
+.btn_foooter{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    margin-right: 0.5rem;
+}
+
+
+@media screen and (max-width: 62rem) {
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c2b47;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
+    .container-main,.option-menu,.services-option{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    .home_title{
+        font-size: 5rem;
+    }
+    .home_text{
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+    .btn{
+        width: 12rem;
+        height: auto;
+        font-size: 1.5rem;
+    }
+    .home-image{
+        width: 30rem;
+        height: auto;
+        margin-top: 3rem;
+
+    }
+    .about_title{
+        margin-top: 10rem;
+        font-size: 2.5rem;
+    }
+    .menu_title,.services_title{
+        margin-top: 0;
+        font-size: 2.5rem;
+    }
+    .about_subtitle{
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+    .about_text{
+        margin-top: 0;
+        font-size: 1.3rem;
+    }
+    .about-image{
+        width: 28rem;
+        height: auto;
+        order: 2;
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+    .about-information{
+        order: 1;
+        margin-top: 0;
+    } 
+    .menu_text,.services_subtitle{
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+    }
+    .option1,.option2,.option3,.services1,.services2,.services3{
+        width: 20rem;
+        height: auto;  
+        margin-bottom: 3rem;   
+    }
+    .food1,.food2,.food3,.order,.shipping,.dellverd{
+        width: 12rem;
+        height: auto;
+    }
+    .option_title,.order_title,.shipping_title,.dellverd_title{
+        font-size: 1.8rem;
+    }
+    .option_subtitle,.order_text,.shipping_text,.dellverd_text{
+        font-size: 1.5rem;
+    }
+    .option_price{
+        font-size: 1.5rem;
+    }
+    .item-phrase{
+        width: 90%;
+        height: 20rem;
+        background-color: #fff;
+    }
+    .phrase_text{
+        font-size: 2.7rem;
+    }
+    .container-footer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: start;
+        align-items: center;
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        margin-left: 5rem;
+    }
+    .items_title{
+        color: #fff;
+        font-size: 2rem;
+    }
+    .items a {
+        color: #fff;
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
+    .btn_foooter{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 100%;
+        margin-right: 0.5rem;
+    }
+    
+}
+@media screen and (max-width: 37.5rem) {
+    .navbar-brand{
+        font-size: 2rem;
+    }
+    .navbar-toggler{
+        background-color: #fff;
+        font-size: 1rem;
+    }
+    .navbar-brand{
+        font-size: 2rem;
+    }
+    .container-main,.option-menu,.services-option{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    .home_title{
+        font-size: 2.5rem;
+    }
+    .home_text{
+        font-size: 1.5rem;
+    }
+    .btn{
+        width: 10rem;
+        height: auto;
+        font-size: 1.2rem;
+    }
+    .home-image{
+        width: 18rem;
+        height: auto;
+    }
+    .about_title{
+        font-size: 2.5rem;
+        margin-top: 2rem
+    }
+    .menu_title,.services_title{
+        font-size: 2.5rem;
+        margin-top: 0;
+    }
+    .about_subtitle{
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+    .about-image{
+        width: 18rem;
+        height: auto;
+        order: 2;
+        margin-top: 2.5rem;
+    }
+    .about-information{
+        order: 1;
+        margin-top: 8rem;
+    } 
+    .about_text{
+        margin-top: 0px;
+        font-size: 1rem;
+    }
+    .menu_text,.services_subtitle{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .option1,.option2,.option3,.services1,.services2,.services3{
+        width: 15rem;
+        height: auto;  
+        margin-bottom: 3rem;   
+    }
+    .food1,.food2,.food3,.order,.shipping,.dellverd{
+        width: 8rem;
+        height: auto;
+    }
+    .option_title,.order_title,.shipping_title,.dellverd_title{
+        font-size: 1.5rem;
+    }
+    .option_subtitle,.order_text,.shipping_text,.dellverd_text{
+        font-size: 1.4rem;
+    }
+    .option_price{
+        font-size: 1.4rem;
+    }
+    .item-phrase{
+        width: 80%;
+        height: 15rem;
+        background-color: #fff;
+    }
+    .phrase_text{
+        font-size: 1.5rem;
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        margin-left: 2.5rem;
+    }
+    .items_title{
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    .items a {
+        color: #fff;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+    .btn_foooter{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 100%;
+        margin-right: 0.5rem;
+    }
+    
+}
